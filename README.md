@@ -49,3 +49,10 @@
 -   Advanced high-performance bus (AHB)
 -   Advanced extensible interface (AXI)
 -   Advanced trace bus (ATB)
+
+# Introduction of AMBA APB
+- The Advanced Peripheral Bus (APB) is part of the Advanced Micro  controller Bus Architecture (AMBA)  .
+-  APB is optimized for minimal power consumption and reduced  interface  complexity.
+- The AMBA APB should be used to interface to any peripherals which are  low bandwidth and do not require the  high performance of a pipelined bus  interface.
+- The AMBA APB appears as a local secondary bus that is encapsulated as  a single AHB or ASB slave  device.
+
