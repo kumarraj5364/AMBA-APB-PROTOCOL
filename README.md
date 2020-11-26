@@ -6,7 +6,7 @@
  # Table of Contents
  - [Introduction of AMBA](#Introduction-of-AMBA)
 -  [AMBA Bus architecture](#AMBA-Bus-Architechture)
-- [Types of AMBA Bus](#Types-of-AMBA-Bus)
+  * [Types of AMBA Bus](#Types-of-AMBA-Bus)
 - [Introduction of AMBA APB](#Introduction-of-AMBA-APB)
 - [APB Block Diagram](#APB-Block-Diagram)
 - [Signal specification of APB](#signal-specification-of-APB)
@@ -39,3 +39,13 @@
   - This system has emerged as the defacto standard for IP library progress and SoC interconnection.
 
     ![Alt](Images/img1.jpg)
+
+
+ ## Types of AMBA Bus
+ 
+ Five interfaces are defined within the AMBA specification: 
+-   Advanced system bus (ASB)
+-   Advanced peripheral bus (APB)
+-   Advanced high-performance bus (AHB)
+-   Advanced extensible interface (AXI)
+-   Advanced trace bus (ATB)
