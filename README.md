@@ -98,6 +98,7 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 -  If PREADY is driven HIGH by the slave then the ACCESS state is exited and the bus returns to the IDLE state if no more transfers are required. Alternatively, the bus moves directly to the SETUP state if another transfer follows.
 
 # Write operation
+
   ![Alt](Images/img4.jpg)
 
 - At T1, a write transfer starts with PADDR, PWDATA, PWRITE, and PSEL, being registered at the rising edge of PCLK. It is called the SETUP cycle.                                    
@@ -107,6 +108,7 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 
 # Read operation
+
   ![Alt](Images/img5.jpg)
 
 - During read operation the PENABLE, PSEL, PADDR PWRITE, signals are asserted at the clock edge T1 (**SETUP cycle**).         
