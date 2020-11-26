@@ -5,8 +5,8 @@
        rajbihar5364@gmail.com
  # Table of Contents 
 - [Introduction of AMBA](#Introduction-of-AMBA)  
--  [AMBA Bus architecture](#AMBA-Bus-Architechture)  
-  *  [Types of AMBA Bus](#Types-of-AMBA-Bus)
+- [AMBA Bus architecture](#AMBA-Bus-Architechture)   
+  * [Types of AMBA Bus](#Types-of-AMBA-Bus)
 - [Introduction of AMBA APB](#Introduction-of-AMBA-APB)
 - [APB Block Diagram](#APB-Block-Diagram)
 - [Signal specification of APB](#signal-specification-of-APB)
