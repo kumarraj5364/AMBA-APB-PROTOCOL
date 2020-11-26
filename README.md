@@ -99,7 +99,7 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 # Write operation
 
-  ![Alt](Images/img4.jpg)
+  ![Alt](Images/img4.jpg=10x10)
 
 - At T1, a write transfer starts with PADDR, PWDATA, PWRITE, and PSEL, being registered at the rising edge of PCLK. It is called the SETUP cycle.                                    
 -  At the next rising edge of the clock T2 it is called ACCESS cycle, PENABLE, and PREADY, are registered. When asserted, PENABLE indicates starting of Access phase of the transfer. When asserted, PREADY indicates that the slave can complete the transfer at the next rising edge of PCLK.                     
@@ -109,7 +109,7 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 # Read operation
 
-  ![Alt](Images/img5.jpg=10x10)
+  ![Alt](Images/img5.jpg)
 
 - During read operation the PENABLE, PSEL, PADDR PWRITE, signals are asserted at the clock edge T1 (**SETUP cycle**).         
 - At the clock edge T2, (**ACCESS cycle**), the PENABLE, PREADY are asserted and PRDATA is also read during this phase. The slave must provide the data before the end of the read transfer.  
