@@ -38,4 +38,4 @@
   - AMBA specifications are able to maximize the use of system bus bandwidth during dead time. After        defining a common backbone for SoC modules, it enhances a reusable design methodology. 
   - This system has emerged as the defacto standard for IP library progress and SoC interconnection.
 
-    ![Alt](images/img1.jpg)
+    ![Alt](Images/img1.jpg)
