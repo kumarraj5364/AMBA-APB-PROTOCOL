@@ -93,6 +93,14 @@
 **IDLE :** This is the default state of the APB.                
 **SETUP:**  When a transfer is required the bus moves into the SETUP state, where the appropriate select signal, **PSELx**, is asserted. The bus only remains in the SETUP state for one clock cycle and always moves to the ACCESS state on the next rising edge of the clock.                       
 **ACCESS:** The enable signal, **PENABLE**, is asserted in the ACCESS state. The address, write, select, and write data signals must remain stable during the transition from the SETUP to ACCESS state.
-Exit from the ACCESS state is controlled by the **PREADY** signal from the slave:                  
+Exit from the ACCESS state is controlled by the **PREADY** signal from the slave: 
 - If PREADY is held LOW by the slave then the peripheral bus remains in the ACCESS state.             
 -  If PREADY is driven HIGH by the slave then the ACCESS state is exited and the bus returns to the IDLE state if no more transfers are required. Alternatively, the bus moves directly to the SETUP state if another transfer follows.
+
+# Write operation
+  ![Alt](Images/img4.jpg)
+
+- At T1, a write transfer starts with PADDR, PWDATA, PWRITE, and PSEL, being registered at the rising edge of PCLK. It is called the SETUP cycle.                                    
+-  At the next rising edge of the clock T2 it is called ACCESS cycle, PENABLE, and PREADY, are registered. When asserted, PENABLE indicates starting of Access phase of the transfer. When asserted, PREADY indicates that the slave can complete the transfer at the next rising edge of PCLK.                     
+- The PADDR, PWDATA, and control signals all remain valid until the transfer completes at T3, the end of the Access phase.                                                         
+- The PENABLE, is disabled at the end of the transfer. The select signal PSEL is also disabled unless the transfer is to be followed immediately by another transfer to the same peripheral.                       
