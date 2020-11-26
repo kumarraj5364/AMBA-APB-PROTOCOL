@@ -104,3 +104,12 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 -  At the next rising edge of the clock T2 it is called ACCESS cycle, PENABLE, and PREADY, are registered. When asserted, PENABLE indicates starting of Access phase of the transfer. When asserted, PREADY indicates that the slave can complete the transfer at the next rising edge of PCLK.                     
 - The PADDR, PWDATA, and control signals all remain valid until the transfer completes at T3, the end of the Access phase.                                                         
 - The PENABLE, is disabled at the end of the transfer. The select signal PSEL is also disabled unless the transfer is to be followed immediately by another transfer to the same peripheral.                       
+
+
+# Read operation
+  ![Alt](Images/img5.jpg)
+
+- During read operation the PENABLE, PSEL, PADDR PWRITE, signals are asserted at the clock edge T1 (**SETUP cycle**).         
+- At the clock edge T2, (**ACCESS cycle**), the PENABLE, PREADY are asserted and PRDATA is also read during this phase. The slave must provide the data before the end of the read transfer.  
+
+
