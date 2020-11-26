@@ -61,3 +61,8 @@
 - The AMBA APB appears as a local secondary bus that is encapsulated as  a single AHB or ASB slave  device.
 - AMBA APB provides the basic peripheral macro cell communications infrastructure as a secondary bus from the  higher bandwidth pipelined main system bus. It consist of interfaces which are memory-mapped registers.
 
+## APB block diagram
+
+  ![Alt](Images/img2.jpg)
+## Signal specification of APB
+
