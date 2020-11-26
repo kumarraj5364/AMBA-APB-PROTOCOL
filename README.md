@@ -7,7 +7,7 @@
 - [Introduction of AMBA](#Introduction-of-AMBA)  
 - [AMBA Bus architecture](#AMBA-Bus-Architechture)   
   * [Types of AMBA Bus](#Types-of-AMBA-Bus)
-- [Introduction of AMBA APB](#Introduction-of-AMBA-APB)
+- [Advanced Peripheral Bus](#Advanced-Peripheral-Bus)
 - [APB Block Diagram](#APB-Block-Diagram)
 - [Signal specification of APB](#signal-specification-of-APB)
 - [Design and operating states of APB](#Design-and-operating-states-of-APB)
@@ -40,6 +40,10 @@
 
     ![Alt](Images/img1.jpg)
 
+  - This is development of embedded microcontroller products with one or more CPUs or signal processors. 
+  -  This is highly reusable peripheral appropriate for full-custom, standard cell and gate array technologies. 
+  -  It provides a road-map for advanced cached CPU cores and the development of peripheral libraries to minimize the silicon infrastructure required to support efficient on-chip.   
+  An AMBA is having backbone bus AMBA AHB or AMBA ASB. It sustains external memory bandwidth, on which the CPU, on-chip memory and other Direct Memory Access (DMA) devices abide. This bus provides a high-bandwidth interface between the elements that are involved in the majority of transfers. Also it is a bridge to the lower bandwidth APB.
 
  ## Types of AMBA Bus
 
@@ -50,9 +54,10 @@
 -   Advanced extensible interface (AXI)
 -   Advanced trace bus (ATB)
 
-# Introduction of AMBA APB
+# Advanced Peripheral Bus
 - The Advanced Peripheral Bus (APB) is part of the Advanced Micro  controller Bus Architecture (AMBA)  .
 -  APB is optimized for minimal power consumption and reduced  interface  complexity.
 - The AMBA APB should be used to interface to any peripherals which are  low bandwidth and do not require the  high performance of a pipelined bus  interface.
 - The AMBA APB appears as a local secondary bus that is encapsulated as  a single AHB or ASB slave  device.
+- AMBA APB provides the basic peripheral macro cell communications infrastructure as a secondary bus from the  higher bandwidth pipelined main system bus. It consist of interfaces which are memory-mapped registers.
 
