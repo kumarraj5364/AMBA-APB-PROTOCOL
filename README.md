@@ -7,6 +7,7 @@
 - [Introduction of AMBA](#Introduction-of-AMBA)  
 - [AMBA Bus architecture](#AMBA-Bus-Architechture)   
   * [Types of AMBA Bus](#Types-of-AMBA-Bus)
+  * [AHB VS APB](#AHB-VS-APB)
 - [Advanced Peripheral Bus](#Advanced-Peripheral-Bus)
   * [APB Block Diagram](#APB-Block-Diagram)
   * [Signal specification of APB](#signal-specification-of-APB)
@@ -54,6 +55,14 @@
 -   Advanced extensible interface (AXI)
 -   Advanced trace bus (ATB)
 
+## AHB VS APB
+- AHB stands for Advanced High-performance Bus and APB sands for Advanced Peripheral Bus. Both the Advanced High-performance Bus and the Advanced Peripheral Bus are part of the Advanced Microprocessor Bus Architecture (AMBA). Though both the AHB and the APB belong to AMBA, they differ in many way.    
+- Difference between the two, the AHB uses a full duplex parallel communication whereas the APB uses massive memory-I/O accesses. Both the AHB and the APB are on chip Bus standards. The Advanced High-performance Bus is capable of waits, errors and bursts. The ADH, which is pipelined, mainly connects to memories.      
+- When comparing the usage, the APB is simpler than the AHB. Unlike the AHB, there is no pipelining in APB. The APB is mainly proposed for connecting to simple peripherals. Looking at the AHB and the APB, it can be seen that the APB comes with a low power peripheral.         
+- It can also be seen that Advanced Peripheral Bus is sometimes optimized for reduced interface complexity and minimal power consumption for supporting peripheral functions. This Bus can also be used in union with either version of the system bus.               
+- When looking at the features of AHB, it has a single edge clock protocol, several bus masters, split transactions, single-cycle bus master handover, burst transfers, large bus widths.          
+- In AHB, the transaction consists of an address phase and a data phase. In case of AHB, there is only one Bus master at a time. When compared to Advanced High-performance Bus, the Advanced Peripheral Bus is only used for low bandwidth control accesses. Though the APB has an address phase and data phase as like that of the AHB, it comes with a list of low complexity signal.
+
 # Advanced Peripheral Bus
 - The Advanced Peripheral Bus (APB) is part of the Advanced Micro  controller Bus Architecture (AMBA)  .
 -  APB is optimized for minimal power consumption and reduced  interface  complexity.
@@ -64,5 +73,15 @@
 ## APB block diagram
 
   ![Alt](Images/img2.jpg)
+
 ## Signal specification of APB
+ **PCLK Clock:** The rising edge of PCLK times all transfers on the APB.   
+ **PRESET:**  System bus equivalent Reset. The APB reset signal is active LOW.  
+ **PADDR:**  32 bit. address bus PSEL The slave device is selected and that a data transfer is required.   
+ **PENABLE Enable:** This signal indicates the second and subsequent cycles of an APB transfer.   
+ **PWRITE:**  Access when HIGH.    
+ **PWDATA:**  32 bits. Write data PWRITE is HIGH.     
+ **PREADY:**  Ready. To extend an APB transfer.    
+ **PRDATA:**  32 bits. Read data. PWRITE is LOW.   
+ **PSLAVERR Slave error:** This signal indicates a transfer failure.  
 
