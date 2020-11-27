@@ -116,4 +116,13 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 # Simulation results of APB design
  ![Alt](Images/img6.jpg)               
- Verilog implementation of Operating states of APB. please [click here](https://www.edaplayground.com/x/2gvY)  
+ Verilog implementation of Operating states of APB. please [click here](https://www.edaplayground.com/x/2gvY) 
+
+  # Conclusion
+- This paper gives an outline of the AMBA bus architecture and explain the APB bus in detail. The APB bus is designed using the Verilog HDL according to the specification and is verified using **EDAplaground**.        
+- The simulation results show that the data read from a particular memory location is same as the data written to the given memory location.               
+- The results obtained after the simulation will be compared with the results.
+
+# Acknowledgement
+
+- I would like to thank our Institution for equipping us with Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor,Dr.Saroj Rout [linkedin](linkedin.com/in/sroutk) and Prof:santunu sarangi [linkedin](https://www.linkedin.com/in/santunu-sarangi-b731305b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bg9BX%2F0YtQ0yyTenaLLJTog%3D%3D) for their constant advice and guidance throughout the project duration.
