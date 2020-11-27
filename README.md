@@ -129,9 +129,9 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 # References
   
-[1] URL:[click here](http://wwwmicro.deis.unibo.it/~magagni/amba99.pdf)
-[2] ARM, “AMBA Specification Overview”, available at [click here](http://www.arm.com/) 
-[3] ARM, “AMBA Specification (Rev 2.0)”, available at [click here](http://www.arm.com)        
-[4] URL: [click here](http://www.differencebetween.net/technology/difference-between-ahb-and-apb) 
-[5] Samir Palnitkar, “Verilog HDL: A guide to Digital Design and Synthesis (2nd Edition), Pearson, 2008. 
-[6] URL:[click here](http://www.testbench.com)
+[1] URL:[click here](http://wwwmicro.deis.unibo.it/~magagni/amba99.pdf)     
+[2] ARM, “AMBA Specification Overview”, available at [click here](http://www.arm.com/)       
+[3] ARM, “AMBA Specification (Rev 2.0)”, available at [click here](http://www.arm.com)                
+[4] URL: [click here](http://www.differencebetween.net/technology/difference-between-ahb-and-apb)        
+[5] Samir Palnitkar, “Verilog HDL: A guide to Digital Design and Synthesis (2nd Edition), Pearson, 2008.       
+[6] URL:[click here](http://www.testbench.com)     
