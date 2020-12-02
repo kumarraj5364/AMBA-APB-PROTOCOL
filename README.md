@@ -125,12 +125,12 @@ Exit from the ACCESS state is controlled by the **PREADY** signal from the slave
 
 # Acknowledgement
 
-I would like to thank our Institution for equipping us with Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor,Dr.Saroj Rout [click here](https://www.linkedin.com/in/sroutk?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGPdq1QbhS6mnLJPpjzlEIQ%3D%3D) and Prof:santunu sarangi [click here](https://www.linkedin.com/in/santunu-sarangi-b731305b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bg9BX%2F0YtQ0yyTenaLLJTog%3D%3D) for their constant advice and guidance throughout the project duration.
+I would like to thank our Institution for equipping us with Advanced VLSI Lab facilities to successfully execute our project. I am also grateful to our mentor, [Dr.Saroj Rout](https://www.linkedin.com/in/sroutk?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGPdq1QbhS6mnLJPpjzlEIQ%3D%3D) and  [Prof:santunu sarangi](https://www.linkedin.com/in/santunu-sarangi-b731305b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bg9BX%2F0YtQ0yyTenaLLJTog%3D%3D) for their constant advice and guidance throughout the project duration.
 
 # References
         
-[1] ARM, “AMBA Specification Overview”, available at [click here](http://www.arm.com/)       
-[2] ARM, “AMBA Specification (Rev 2.0)”, available at [click here](http://www.arm.com)                
+[1] ARM, “AMBA Specification Overview”, available at [URL](http://www.arm.com/)       
+[2] ARM, “AMBA Specification (Rev 2.0)”, available at [URL](http://www.arm.com)                
 [3] URL: [click here](http://www.differencebetween.net/technology/difference-between-ahb-and-apb)        
 [4] Samir Palnitkar, “Verilog HDL: A guide to Digital Design and Synthesis (2nd Edition), Pearson, 2008.       
 [5] URL:[click here](http://www.testbench.com)     
